@@ -33,22 +33,46 @@ flex: 1;
 height: 1px;
 background: #eee;
 }
+#radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -60px;
+        left: -130px;
+        background: radial-gradient(#44006b, #ad1fff, #eee);
+        overflow: hidden;
+      }
+  
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 400px;
+        height: 200px;
+        background: radial-gradient(#44006b, #ad1fff, #eee);
+        overflow: hidden;
+      }
+
+
 </style>
 
 <body>
    
    
 
-    <div class="container-fluid mb-30">
+    <div class="container-fluid mb-30" >
         <section class="vh-100">
             <div class="container py-5 h-100">
-              <div class="row d-flex align-items-center justify-content-center h-100">
-                <div class="col-md-8 col-lg-7 col-xl-6">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-                    class="img-fluid" alt="Phone image">
+              <div class="row d-flex justify-content-center align-items-center mt-5" >
+                <div class=" col-lg-4 ">
+
                 </div>
-                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-                  <form>
+               
+
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                  <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+                <div class="col-lg-4 border ">
+
+                  <form class=" mt-2">
                    
                     <div class="form-outline mb-4">
                       <input type="email" id="form1Example13" class="form-control form-control-lg" />
@@ -73,17 +97,18 @@ background: #eee;
                     
                    <div class="form-group d-flex flex-row justify-content-center ">
                     
+                    <a href="home.html">
                         
-                            <button type="submit" id="myButton" class="btn btn-success mr-2 " > <a href="home.html"> </a>Sign in</button>
-                      
+                            <button type="submit" id="myButton" class="btn btn-success mr-2 " > Sign in</button>
+                          </a>
                     
                     <br>
                     
                         <a href="register.html">
-                            <button type="submit" class="btn btn-primary  ml-2 " onclick="href='register.html'" >Sign Up</button>
+                            <button type="submit" class="btn btn-primary  ml-2 "  >Sign Up</button>
                 
                         </a>
-
+  
                    </div>
           
                     <div class="divider d-flex align-items-center my-4">
@@ -110,7 +135,13 @@ background: #eee;
                       </div>
           
                   </form>
+
                 </div>
+                <div class=" col-lg-4 ">
+
+                </div>
+
+                
               </div>
             </div>
           </section>
